@@ -12,8 +12,12 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and py27]
+  features:
+    - vc10  # [win and py34]
+    - vc14  # [win and py35]
+    - vc14  # [win and py36]
 
 requirements:
   build:
@@ -26,7 +30,7 @@ requirements:
 
 test:
   requires:
-    - python  # [win]
+    - python {{ environ['PY_VER'] + '*' }}  # [win]
   commands:
     - test -e $PREFIX/lib/libprogressbar.so  # [linux]
     - test -e $PREFIX/lib/libprogressbar_static.a  # [linux]

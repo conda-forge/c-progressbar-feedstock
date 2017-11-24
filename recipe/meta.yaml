@@ -25,8 +25,16 @@ requirements:
     - toolchain
     - cmake
     - ncurses 5.9  # [not win]
+    - vc 9   # [win and py27]
+    - vc 10  # [win and py34]
+    - vc 14  # [win and py35]
+    - vc 14  # [win and py36]
   run:
     - ncurses 5.9  # [not win]
+    - vc 9   # [win and py27]
+    - vc 10  # [win and py34]
+    - vc 14  # [win and py35]
+    - vc 14  # [win and py36]
 
 test:
   requires:

@@ -7,11 +7,8 @@ cmake -G "NMake Makefiles" ^
          ..
 if errorlevel 1 exit 1
 
-nmake
+cmake --build . --config Release --target install
 if errorlevel 1 exit 1
 
-nmake test
-if errorlevel 1 exit 1
-
-nmake install
+ctest -V --output-on-failure -C Release
 if errorlevel 1 exit 1

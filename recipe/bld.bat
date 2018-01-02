@@ -1,15 +1,14 @@
-mkdir build
+mkdir build && cd build
 if errorlevel 1 exit 1
-cd build
-if errorlevel 1 exit 1
+
 cmake -G "NMake Makefiles" ^
-         -DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS=TRUE ^
+         -DCMAKE_BUILD_TYPE=Release ^
          -DCMAKE_INSTALL_PREFIX:PATH=%PREFIX% ^
          ..
 if errorlevel 1 exit 1
-nmake
+
+cmake --build . --config Release --target install
 if errorlevel 1 exit 1
-nmake test
-if errorlevel 1 exit 1
-nmake install
+
+ctest -V --output-on-failure -C Release
 if errorlevel 1 exit 1

@@ -46,7 +46,7 @@ test:
     - test -e $PREFIX/lib/libprogressbar.dylib  # [osx]
     - test -e $PREFIX/lib/libprogressbar_static.a  # [osx]
     - if NOT exist %PREFIX%/lib/progressbar.lib exit 1  # [win]
-    - if NOT exist %PREFIX%/lib/progressbar.dll exit 1  # [win]
+    - if NOT exist %PREFIX%/bin/progressbar.dll exit 1  # [win]
     - if NOT exist %PREFIX%/lib/progressbar_static.lib exit 1  # [win]
 
 about:

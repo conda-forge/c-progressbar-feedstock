@@ -1,6 +1,6 @@
 {% set name = "c-progressbar" %}
-{% set version = "0.1.6" %}
-{% set sha256 = "30f3ada80465ab75ad41cf0ccebf31e3d6508cf98d72ac8136a7dba3b29ba850" %}
+{% set version = "0.1.9" %}
+{% set sha256 = "201a574481ab1dff55cc6c7ca6e34f96b25b04c1390330ab00491f2ee45f8d80" %}
 
 package:
   name: {{ name|lower }}
@@ -13,6 +13,7 @@ source:
 
 build:
   number: 0
+  skip: True  # [win and py36]
   features:
     - vc9   # [win and py27]
     - vc10  # [win and py34]
@@ -52,7 +53,7 @@ about:
   home: https://github.com/limix/progressbar
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: 'C library for displaying text progress bars'
   dev_url: https://github.com/limix/progressbar
 

@@ -14,14 +14,16 @@ Summary: C library for displaying text progress bars
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/c-progressbar-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/c-progressbar-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/c-progressbar-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/c-progressbar-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/c-progressbar-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/c-progressbar-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/c-progressbar-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/c-progressbar-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/c-progressbar-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/c-progressbar-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/c-progressbar-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/c-progressbar-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/c-progressbar/badges/version.svg)](https://anaconda.org/conda-forge/c-progressbar)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/c-progressbar/badges/downloads.svg)](https://anaconda.org/conda-forge/c-progressbar)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-c--progressbar-green.svg)](https://anaconda.org/conda-forge/c-progressbar) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/c-progressbar.svg)](https://anaconda.org/conda-forge/c-progressbar) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/c-progressbar.svg)](https://anaconda.org/conda-forge/c-progressbar) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/c-progressbar.svg)](https://anaconda.org/conda-forge/c-progressbar) |
 
 Installing c-progressbar
 ========================

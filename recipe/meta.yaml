@@ -13,29 +13,15 @@ source:
 
 build:
   number: 1000
-  skip: True  # [win and py36]
-  features:
-    - vc9   # [win and py27]
-    - vc10  # [win and py34]
-    - vc14  # [win and py35]
-    - vc14  # [win and py36]
 
 requirements:
   build:
-    - python  # [win]
-    - toolchain
     - cmake
-    - ncurses 5.9  # [not win]
-    - vc 9   # [win and py27]
-    - vc 10  # [win and py34]
-    - vc 14  # [win and py35]
-    - vc 14  # [win and py36]
+    - {{ compiler('c') }}
+  host:
+    - ncurses      # [not win]
   run:
-    - ncurses 5.9  # [not win]
-    - vc 9   # [win and py27]
-    - vc 10  # [win and py34]
-    - vc 14  # [win and py35]
-    - vc 14  # [win and py36]
+    - ncurses      # [not win]
 
 test:
   requires:
